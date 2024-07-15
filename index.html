@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Akari Motor Shop</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" href="logo.png">
+</head>
+<body>
+    <div id="wrapper">
+        <header id="main-ln">
+            <div id="logo">
+                <img src="logo.png" alt="Logo" height="100" width="150">
+            </div>
+            <nav id="nav">
+                <a href="home.html" target="_self">Home</a>
+                <a href="vehicles.html" target="_self">Vehicles</a>
+                <a href="finance.html" target="_self">Finance</a>
+                <a href="services.html" target="_self">Services</a>
+                <a href="priceguide.html" target="_self">Price Guide</a>
+                <a href="garage.html" target="_self">Garage</a>
+                <a href="#" id="more-link">More</a>
+            </nav>
+        </header>
+
+        <section id="hd">
+            <div class="video-container">
+                <img src="dodge.jpg" height="700" width="1495">
+            </div>
+        </section>
+
+        <main id="mainc">
+            <div class="box">
+                <img src="oz racing.jpeg" height="215" width="330">
+                <h1>OZ RACING WHEELS</h1>
+                <p>The perfect fusion between performance, construction quality and design. All our alloy wheels are conceived, hand-built, and tested in Italy. Picture yourself while driving.</p>
+            </div>
+            <div class="box">
+                <img src="airsus.webp" height="215" width="330">
+                <h1>AIR SUSPENSION</h1>
+                <p>Instead of a physical spring, typically made of steel, at each wheel, an air suspension uses bladders that can be inflated or deflated using an onboard air compressor.</p>
+            </div>
+            <div class="box">
+                <img src="spoon.jpg" height="215" width="330">
+                <h1>SPOON N1 MUFFLER</h1>
+                <p>The Spoon N1 muffler kit has been designed to improve exhaust flow enabling higher horse power from high performance Honda engines.</p>
+            </div>
+            <div class="box">
+                <img src="2jz.jpg" height="215" width="330">
+                <h1>2JZ-GTE</h1>
+                <p>The 2JZ-GTE is an inline-layout, six-cylinder, belt-driven dual overhead camshaft, air-intercooled, twin-turbocharged, cast-iron block, aluminum cylinder head engine.</p>
+            </div>
+        </main>
+
+        <footer id="footer">
+            <p></p>
+        </footer>
+    </div>
+
+    <aside id="sidebar">
+        <a href="posts.html" target="_self" class="link1">POSTS<br><br></a>
+        <a href="preview.html" target="_self" class="link1">PREVIEW<br><br></a>
+        <a href="events.html" target="_self" class="link1">EVENTS<br><br></a>
+        <a href="overview.html" target="_self" class="link1">OVERVIEW<br><br></a>
+    </aside>
+
+    <script>
+        document.getElementById('more-link').addEventListener('click', function(event) {
+            event.preventDefault();
+            var sidebar = document.getElementById('sidebar');
+            if (sidebar.style.right === '0px' || sidebar.style.right === '') {
+                sidebar.style.right = '-250px';
+            } else {
+                sidebar.style.right = '0px';
+            }
+        });
+    </script>
+</body>
+</html>

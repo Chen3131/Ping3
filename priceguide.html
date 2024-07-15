@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Price Guide</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="priceguide.css">
+    <link rel="icon" href="logo.png">
+</head>
+<body>
+    <div id="wrapper">
+        <header id="main-ln">
+            <div id="logo">
+                <a href="index.html"><img src="logo.png" alt="Logo" height="100" width="150"></a>
+            </div>
+            <nav id="nav">
+                <a href="home.html" target="_self">Home</a>
+                <a href="vehicles.html" target="_self">Vehicles</a>
+                <a href="finance.html" target="_self">Finance</a>
+                <a href="services.html" target="_self">Services</a>
+                <a href="priceguide.html" target="_self">Price Guide</a>
+                <a href="garage.html" target="_self">Garage</a>
+                <a href="#" id="more-link">More</a>
+            </nav>
+        </header>
+
+        <section id="hd">
+            <div class="video-container">
+                <img src="triplets.jpg" alt="Triplets Image">
+            </div>
+        </section>
+
+        <main id="mainc">
+            <!-- main content -->
+        </main>
+
+        <footer id="footer">
+            BY PING-WEI CHEN || pwchen31@gmail.com
+        </footer>
+    </div>
+
+    <aside id="sidebar">
+        <a href="posts.html" target="_self" class="link1">POSTS<br><br></a>
+        <a href="preview.html" target="_self" class="link1">PREVIEW<br><br></a>
+        <a href="events.html" target="_self" class="link1">EVENTS<br><br></a>
+        <a href="overview.html" target="_self" class="link1">OVERVIEW<br><br></a>
+    </aside>
+
+    <script>
+        document.getElementById('more-link').addEventListener('click', function(event) {
+            event.preventDefault();
+            var sidebar = document.getElementById('sidebar');
+            if (sidebar.style.right === '0px' || sidebar.style.right === '') {
+                sidebar.style.right = '-250px';
+            } else {
+                sidebar.style.right = '0px';
+            }
+        });
+    </script>
+
+</body>
+</html>

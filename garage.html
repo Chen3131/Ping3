@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Garage</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="priceguide.css">
+    <link rel="icon" href="logo.png">
+</head>
+<body>
+    <div id="wrapper">
+        <header id="main-ln">
+            <div id="logo">
+                <a href="index.html"><img src="logo.png" alt="Logo" height="100" width="150"></a>
+            </div>
+            <nav id="nav">
+                <a href="home.html" target="_self">Home</a>
+                <a href="vehicles.html" target="_self">Vehicles</a>
+                <a href="finance.html" target="_self">Finance</a>
+                <a href="services.html" target="_self">Services</a>
+                <a href="priceguide.html" target="_self">Price Guide</a>
+                <a href="garage.html" target="_self">Garage</a>
+                <a href="#" id="more-link">More</a>
+            </nav>
+        </header>
+
+        <main id="mainc">
+            <div class="box">
+                <img src="dodge1.jpg" height="215" width="330">
+                <div class="overlay">
+                    <h1>Dodge Challenger</h1>
+                    <p> </p>
+                </div>
+            </div>
+            <div class="box">
+                <img src="hellcat.jpg" height="215" width="330">
+                <div class="overlay">
+                    <h1>Dodge Challenger SRT Hellcat</h1>
+                    <p> </p>
+                </div>
+            </div>
+            <div class="box">
+                <img src="demon.jpg" height="215" width="330">
+                <div class="overlay">
+                    <h1>Dodge Demon</h1>
+                    <p> </p>
+                </div>
+            </div>
+            <div class="box">
+                <img src="shelby.webp" height="215" width="330">
+                <div class="overlay">
+                    <h1>Ford Mustang Shelby GT500</h1>
+                    <p></p>
+                </div>
+            </div>
+            <div class="box">
+                <img src="ecoboost.jpg" height="215" width="330">
+                <div class="overlay">
+                    <h1>Mustang EcoBoost</h1>
+                    <p></p>
+                </div>
+            </div>
+            <div class="box">
+                <img src="gt3.jpeg" height="215" width="330">
+                <div class="overlay">
+                    <h1>Mustang GT3</h1>
+                    <p> </p>
+                </div>
+            </div>
+            <div class="box">
+                <img src="zl1.jpg" height="215" width="330">
+                <div class="overlay">
+                    <h1>Camaro ZL1</h1>
+                    <p></p>
+                </div>
+            </div>
+            <div class="box">
+                <img src="c8.jpg" height="215" width="330">
+                <div class="overlay">
+                    <h1>Corvette C8</h1>
+                    <p></p>
+                </div>
+            </div>
+            <div class="box">
+                <img src="stingray.jpg" height="215" width="330">
+                <div class="overlay">
+                    <h1>Corvette Stingray Coupe</h1>
+                    <p></p>
+                </div>
+            </div>
+            
+            <div class="box">
+                <img src="c5.webp" height="215" width="330">
+                <div class="overlay">
+                    <h1>Corvette C5</h1>
+                    <p></p>
+                </div>
+            </div>
+            <div class="box">
+                <img src="srt8.1.jpg" height="215" width="330">
+                <div class="overlay">
+                    <h1>Dodge Challenger SRT8</h1>
+                    <p></p>
+                </div>
+            </div>
+            <div class="box">
+                <img src="srt8.jpg" height="215" width="330">
+                <div class="overlay">
+                    <h1>Dodge Charger SRT8</h1>
+                    <p></p>
+                </div>
+            </div>
+            <div class="box">
+                <img src="Z28.jpg" height="215" width="330">
+                <div class="overlay">
+                    <h1>Chevrolet Camaro Z28</h1>
+                    <p></p>
+                </div>
+            </div>
+            <div class="box">
+                <img src="MUSTANG GTD.jpg" height="215" width="330">
+                <div class="overlay">
+                    <h1>Ford Mustang GTD</h1>
+                    <p></p>
+                </div>
+            </div>
+            <div class="box">
+                <img src="camaro ss.jpg" height="215" width="330">
+                <div class="overlay">
+                    <h1>Chevrolet Camaro SS</h1>
+                    <p></p>
+                </div>
+            </div>
+            <div class="box">
+                <img src="gt350.avif" height="215" width="330">
+                <div class="overlay">
+                    <h1>Ford Mustang GT350</h1>
+                    <p></p>
+                </div>
+            </div>
+        </main>
+
+        <footer id="footer">
+            BY PING-WEI CHEN || pwchen31@gmail.com
+        </footer>
+    </div>
+
+    <aside id="sidebar">
+        <a href="posts.html" target="_self" class="link1">POSTS<br><br></a>
+        <a href="preview.html" target="_self" class="link1">PREVIEW<br><br></a>
+        <a href="events.html" target="_self" class="link1">EVENTS<br><br></a>
+        <a href="overview.html" target="_self" class="link1">OVERVIEW<br><br></a>
+    </aside>
+
+    <script>
+        document.getElementById('more-link').addEventListener('click', function(event) {
+            event.preventDefault();
+            var sidebar = document.getElementById('sidebar');
+            if (sidebar.style.right === '0px' || sidebar.style.right === '') {
+                sidebar.style.right = '-250px';
+            } else {
+                sidebar.style.right = '0px';
+            }
+        });
+    </script>
+
+</body>
+</html>

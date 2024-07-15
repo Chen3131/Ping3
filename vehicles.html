@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Vehicles</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="vehicles.css">
+    <link rel="icon" href="logo.png">
+</head>
+<body>
+    <div id="wrapper">
+        <header id="main-ln">
+            <div id="logo">
+                <a href="index.html"><img src="logo.png" alt="Logo" height="100" width="150"></a>
+            </div>
+            <nav id="nav">
+                <a href="home.html" target="_self">Home</a>
+                <a href="#" target="_self">Vehicles</a>
+                <a href="finance.html" target="_self">Finance</a>
+                <a href="services.html" target="_self">Services</a>
+                <a href="priceguide.html" target="_self">Price Guide</a>
+                <a href="garage.html" target="_self">Garage</a>
+                <a href="#" id="more-link">More</a>
+            </nav>
+        </header>
+
+        <section id="hd">
+            <div class="video-container">
+                <iframe id="youtube-video" src="https://www.youtube.com/embed/US05CFZ_JQI?si=a2NU6TWkeealBKQP&autoplay=1&rel=0&showinfo=0&modestbranding=1&controls=0" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <main id="mainc">
+            <div class="box">
+                <img src="dodge1.jpg" height="215" width="330">
+                <h1>Dodge Challenger</h1>
+                <p>The Dodge Challenger is the name of three different generations of 
+                    automobiles produced by the American automobile manufacturer Dodge</p>
+            </div>
+            <div class="box">
+                <img src="hellcat.jpg" height="215" width="330">
+                <h1>Dodge Challenger SRT Hellcat</h1>
+                <p>It’s one of the last coupes with American-style V-8 thunder under its hood. 
+                    The Challenger SRT Hellcat lineup’s most reserved model spews 717 horsepower 
+                    from its supercharged 6.2-liter V-8 engine.</p>
+            </div>
+            <div class="box">
+                <img src="demon.jpg" height="215" width="330">
+                <h1>Dodge Demon</h1>
+                <p>The Dodge Demon is a limited-production variant of the Challenger 
+                    renowned for its extreme performance, featuring a supercharged 6.2-liter HEMI V8 engine 
+                    that delivers over 800 horsepower. </p>
+            </div>
+            <div class="box">
+                <img src="shelby.webp"  height="215" width="330">
+                <h1>Mustang Shelby GT500</h1>
+                <p>The Shelby GT500 has the most powerful engine ever stuffed into a Ford production car 
+                    lurks behind the Shelby GT500's menacing mug</p>
+            </div>
+
+            <div class="box">
+                <img src="ecoboost.jpg" height="215" width="330">
+                <h1>Mustang Eco Boost</h1>
+                <p>Powered by a turbocharged 2.3-liter four-cylinder engine, 
+                    the entry-level ‘Stang produces 315 hp and 350 pound-feet of torque, 
+                    which means it can sprint to 60 mph in a sprightly 4.9 seconds.</p>
+            </div>
+            <div class="box">
+                <img src="gt3.jpeg" height="215" width="330">
+                <h1>Mustang GT3</h1>
+                <p>It is powered by a 5.4-litre Coyote-based V8 engine, 
+                    developed by Ford Performance and built by World Rally Championship partners, 
+                    M-Sport.</p>
+            </div>
+            <div class="box">
+                <img src="zl1.jpg" height="215" width="330">
+                <h1>Camaro ZL1</h1>
+                <p>It's equipped with advanced performance technologies like Magnetic Ride Control 
+                    and a track-focused design, making it a formidable contender in the muscle car segment.</p>
+            </div>
+            <div class="box">
+                <img src="c8.jpg"  height="215" width="330">
+                <h1>Corvette C8</h1>
+                <p>The Chevrolet Corvette (C8) is the eighth generation of the Corvette sports car 
+                    manufactured by American automobile manufacturer Chevrolet.</p>
+            </div>
+            <div class="box">
+                <img src="stingray.jpg"  height="215" width="330">
+                <h1>Corvette Stingray Coupe</h1>
+                <p>An eight-speed automatic transmission transmits power to the rear axles for that 
+                    authentic sports car driving dynamics, with 19-inch and 20-inch wheels on the front and rear, 
+                    respectively.</p>
+            </div>
+        </main>
+
+        <footer id="footer">
+            BY PING-WEI CHEN || pwchen31@gmail.com
+        </footer>
+    </div>
+
+    <aside id="sidebar">
+        <a href="posts.html" target="_self" class="link1">POSTS<br><br></a>
+        <a href="preview.html" target="_self" class="link1">PREVIEW<br><br></a>
+        <a href="events.html" target="_self" class="link1">EVENTS<br><br></a>
+        <a href="overview.html" target="_self" class="link1">OVERVIEW<br><br></a>
+    </aside>
+</body>
+
+<script>
+    document.getElementById('more-link').addEventListener('click', function(event) {
+        event.preventDefault();
+        var sidebar = document.getElementById('sidebar');
+        if (sidebar.style.right === '0px' || sidebar.style.right === '') {
+            sidebar.style.right = '-250px';
+        } else {
+            sidebar.style.right = '0px';
+        }
+    });
+</script>
+
+</html>

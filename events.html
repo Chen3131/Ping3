@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Posts</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="posts.css">
+    <link rel="icon" href="logo.png">
+</head>
+<body>
+    <div id="wrapper">
+        <header id="main-ln">
+            <div id="logo">
+                <a href="index.html"><img src="logo.png" alt="Logo" height="100" width="150"></a>
+            </div>
+            <nav id="nav">
+                <a href="home.html" target="_self">Home</a>
+                <a href="vehicles.html" target="_self">Vehicles</a>
+                <a href="finance.html" target="_self">Finance</a>
+                <a href="services.html" target="_self">Services</a>
+                <a href="priceguide.html" target="_self">Price Guide</a>
+                <a href="garage.html" target="_self">Garage</a>
+                <a href="#" id="more-link">More</a>
+            </nav>
+        </header>
+
+        <section id="hd">
+            <div class="image-container">
+                <img src="event1.jpg" height="1000" width="2120" alt="2024 Dodge Charger">
+                <p>CARLISLE CHRYSLER NATIONALS<br><br>
+                    EVENT HOURS:<br>
+                    Thursday: Set-Up Day<br>
+                    Fri- Sat: 7 AM - 6 PM<br>
+                    Sunday: 7 AM - 12 PM
+                    <br><br>Come to the largest Mopar event in the world featuring nearly 3,000 vehicles 
+                    from all eras of the Chrysler brand! Classic, muscle cars and high performance 
+                    new models are all showcased at this Mopar-lover's paradise. Cars, parts, 
+                    tools, memorabilia, collectibles and more will be for sale in the 
+                    Mopar Automotive Flea Market, as well as the latest and greatest products 
+                    within the Manufacturers Midway.</p>
+            </div>
+        </section>
+
+        <section id="hd">
+            <div class="image-container">
+                <img src="mustang aniv.webp" height="1000" width="2120" alt="2024 Dodge Charger">
+                <p>MUSTANG 60TH ANNIVERSARY<br><br>
+                    September 5 - 7, 2024
+                    The Ford Mustang turns 60 this year and the Mustang Club of America (MCA) 
+                    is preparing a big anniversary celebration – just as it has done for 
+                    every major milestone birthday for several decades now. 
+                    The MCA 60th Anniversary Celebration is being held at Barber Motorsports Park in Birmingham, 
+                    Alabama, from September 5-7.</p>
+            </div>
+        </section>
+
+        <section id="hd">
+            <div class="image-container">
+                <img src="mias.jpg" height="1000" width="2120" alt="2024 Dodge Charger">
+                <p>Manila International Auto Show (MIAS)<br><br>
+                    From April 4 to 7, 2024, Chevrolet Philippines’ anticipated 
+                    return to the Manila International Auto Show (MIAS) celebrates the Philippine 
+                    launch of the Bowtie brand’s global tagline, 
+                    “Together Let’s Drive” at the aptly themed “Generation Chevrolet” booth.
+                    ‘Together let’s drive’ embodies Chevrolet’s commitment to deep, 
+                    sustained engagement with its owners and communities across generations. 
+                    With its storied past, Chevrolet consistently goes hand in hand with its customers, 
+                    offering a blend of inspiring design, intrinsic value, and exceptional performance, 
+                    all the while driving forward with groundbreaking technology and coveted features.</p>
+            </div>
+        </section>
+
+        <footer id="footer">
+            BY PING-WEI CHEN || pwchen31@gmail.com
+        </footer>
+    </div>
+
+    <aside id="sidebar">
+        <a href="posts.html" target="_self" class="link1">POSTS<br><br></a>
+        <a href="preview.html" target="_self" class="link1">PREVIEW<br><br></a>
+        <a href="events.html" target="_self" class="link1">EVENTS<br><br></a>
+        <a href="overview.html" target="_self" class="link1">OVERVIEW<br><br></a>
+    </aside>
+
+    <script>
+        document.getElementById('more-link').addEventListener('click', function(event) {
+            event.preventDefault();
+            var sidebar = document.getElementById('sidebar');
+            if (sidebar.style.right === '0px' || sidebar.style.right === '') {
+                sidebar.style.right = '-250px';
+            } else {
+                sidebar.style.right = '0px';
+            }
+        });
+    </script>
+</body>
+</html>

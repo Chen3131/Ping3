@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Posts</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="posts.css">
+    <link rel="icon" href="logo.png">
+</head>
+<body>
+    <div id="wrapper">
+        <header id="main-ln">
+            <div id="logo">
+                <a href="index.html"><img src="logo.png" alt="Logo" height="100" width="150"></a>
+            </div>
+            <nav id="nav">
+                <a href="home.html" target="_self">Home</a>
+                <a href="vehicles.html" target="_self">Vehicles</a>
+                <a href="finance.html" target="_self">Finance</a>
+                <a href="services.html" target="_self">Services</a>
+                <a href="priceguide.html" target="_self">Price Guide</a>
+                <a href="garage.html" target="_self">Garage</a>
+                <a href="#" id="more-link">More</a>
+            </nav>
+        </header>
+
+        <section id="hd">
+            <div class="image-container">
+                <img src="viper.jpg" height="1000" width="2120" alt="2024 Dodge Charger">
+                <p>Get ready, adventure enthusiasts! One YouTuber has reimagined the iconic Viper, 
+                    turning it into an off-road titan designed to conquer the untamed wilderness. 
+                    This isn’t just an enhancement; it’s a revolution. With rugged tires, 
+                    advanced suspension and a growl that commands respect, the Viper Off-Roader is set 
+                    to redefine off-road performance. This beast delivers the same 
+                    fierce performance you expect from a Viper, now with off-road capabilities 
+                    that leave the competition trailing. Shredding through deserts, 
+                    navigating trails and climbing rocky peaks, this Dodge Viper Off-Roader 
+                    is the ultimate adventure machine.</p>
+            </div>
+        </section>
+
+        <section id="hd">
+            <div class="image-container">
+                <img src="mustangp.jpg" height="1000" width="2120" alt="2024 Dodge Charger">
+                <p>Ford could have reached into its endless sack of nameplates, 
+                    slapped a historic badge onto the backside of this seventh-generation Mustang, 
+                    and called it a day. But instead, this is the first Mustang 
+                    since generation four to get a new performance trim: the Dark Horse. 
+                    Unlike sixth-gen throwbacks such as the Mach 1 and GT350, 
+                    the Mustang Dark Horse doesn't have any heritage to bolster its image. 
+                    Nor, on the flip side, any lingering nostalgia to hold it back. 
+                    Ford wanted the performance to speak for itself – and boy does it.</p>
+            </div>
+        </section>
+
+        <section id="hd">
+            <div class="image-container">
+                <img src="camaros.jpg" height="1000" width="2120" alt="2024 Dodge Charger">
+                <p>Manila, Philippines – The Covenant Car Company, 
+                    Inc. (TCCCI) – In March 2023 Chevrolet confirmed that the sixth-generation Camaro 
+                    would be the final edition of this much-lauded nameplate. With the very last Camaro 
+                    expected to roll off the assembly line in January 2024, the window to drive home 
+                    this quintessential American muscle car is closing fast. In the Philippines, 
+                    the Camaro is a mainstay among sports car enthusiasts and has established a strong 
+                    following for its sheer power, agility, and striking presence. 
+                    And the buzz surrounding the vehicle has resonated among Filipinos 
+                    who are keen on driving home what is largely being regarded as the “last Camaro.” 
+                    The sixth-generation Camaro, being the last of its kind, 
+                    notches its place in motoring history and cements its status as a bonafide collector’s item. 
+                    Chevrolet Philippines recognizes the importance of this context 
+                    and has thus announced a final call to own this pillar of American muscle. 
+                    In Southeast Asia, the Philippine market will receive the last flock of this legendary icon. 
+                    The sixth-generation Camaro retails for an SRP of Php 4,266,888.00, 
+                    and Chevrolet Philippines is now accepting reservations in all 19 dealerships nationwide 
+                    for this classic-in-the-making.</p>
+            </div>
+        </section>
+
+        <footer id="footer">
+            BY PING-WEI CHEN || pwchen31@gmail.com
+        </footer>
+    </div>
+
+    <aside id="sidebar">
+        <a href="posts.html" target="_self" class="link1">POSTS<br><br></a>
+        <a href="preview.html" target="_self" class="link1">PREVIEW<br><br></a>
+        <a href="events.html" target="_self" class="link1">EVENTS<br><br></a>
+        <a href="overview.html" target="_self" class="link1">OVERVIEW<br><br></a>
+    </aside>
+
+    <script>
+        document.getElementById('more-link').addEventListener('click', function(event) {
+            event.preventDefault();
+            var sidebar = document.getElementById('sidebar');
+            if (sidebar.style.right === '0px' || sidebar.style.right === '') {
+                sidebar.style.right = '-250px';
+            } else {
+                sidebar.style.right = '0px';
+            }
+        });
+    </script>
+</body>
+</html>
