@@ -100,11 +100,23 @@
     </div>
 
     <aside id="sidebar">
-        <a href="posts.html" target="_self" class="sidebar-link"><button id="posts-button" class="sidebar-button">Posts</button></a>
-        <a href="tools.html" target="_self" class="sidebar-link"><button id="tools-button" class="sidebar-button">Tools</button></a>
-        <a href="about.html" target="_self" class="sidebar-link"><button id="about-button" class="sidebar-button">About</button></a>
-        <a href="appointment.html" target="_blank" class="sidebar-link"><button id="appointment-button" class="sidebar-button">Book an Appointment</button></a>
-        <a href="services.html" target="_self" class="sidebar-link"><button id="services-button" class="sidebar-button">Services</button></a>
+        <a href="posts.html" target="_self" class="link1">POSTS<br><br></a>
+        <a href="preview.html" target="_self" class="link1">PREVIEW<br><br></a>
+        <a href="events.html" target="_self" class="link1">EVENTS<br><br></a>
+        <a href="overview.html" target="_self" class="link1">OVERVIEW<br><br></a>
     </aside>
 </body>
+
+<script>
+    document.getElementById('more-link').addEventListener('click', function(event) {
+        event.preventDefault();
+        var sidebar = document.getElementById('sidebar');
+        if (sidebar.style.right === '0px' || sidebar.style.right === '') {
+            sidebar.style.right = '-250px';
+        } else {
+            sidebar.style.right = '0px';
+        }
+    });
+</script>
+
 </html>
