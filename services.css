@@ -181,16 +181,55 @@ aside#sidebar {
     background-color: rgb(138, 32, 32); 
 }
 
+aside#sidebar {
+    position: fixed;
+    top: 0;
+    right: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: black;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    overflow-x: hidden;
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1000;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+#sidebar a {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: relative;
+    top: 100px;
+    line-height: 50px;
+    font-size: 25px;
+    padding-bottom: 50px;
+}
+
+.link1 {
+    font-size: 15px;
+    text-decoration: none;
+    color: white;
+    padding: 10px 0;
+    transition: color 0.3s ease;
+}
+
+.link1:hover {
+    color: rgb(138, 32, 32);
+}
+
 @media (max-width: 768px) {
     nav#nav {
-        flex-wrap: wrap; /* Allow wrapping on smaller screens */
-        gap: 10px; /* Reduce gap between links */
-        overflow-x: hidden; /* Hide horizontal scrollbar on small screens */
-        justify-content: center; /* Center align links */
+        flex-wrap: wrap; 
+        gap: 10px; 
+        overflow-x: hidden; 
+        justify-content: center; 
     }
 
     nav#nav a {
-        padding: 10px 15px; /* Adjust padding for better touch targets */
-        font-size: 20px; /* Decrease font size for smaller screens */
+        padding: 10px 15px; 
+        font-size: 20px; 
     }
 }
